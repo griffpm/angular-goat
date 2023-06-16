@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ListGoatComponent } from './list-goat/list-goat.component';
 import { BorderCardDirective } from './border-card.directive';
 import { DetailGoatComponent } from './detail-goat/detail-goat.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListGoatComponent,
     BorderCardDirective,
-    DetailGoatComponent
+    DetailGoatComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
