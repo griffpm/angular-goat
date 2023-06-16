@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GOATS } from './data-goats';
-import { Goat } from './goat';
+import { GOATS } from './goat/data-goats';
+import { Goat } from './goat/goat';
 
 
 @Component({

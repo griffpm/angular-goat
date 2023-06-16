@@ -1,24 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListGoatComponent } from './list-goat/list-goat.component';
-import { BorderCardDirective } from './border-card.directive';
-import { DetailGoatComponent } from './detail-goat/detail-goat.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { GoatModule } from './goat/goat.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListGoatComponent,
-    BorderCardDirective,
-    DetailGoatComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    GoatModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
