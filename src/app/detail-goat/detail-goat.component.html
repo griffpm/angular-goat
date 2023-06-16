@@ -1,0 +1,15 @@
+<div *ngIf="goat">
+    <div class="container">
+        <div class="card2">
+            <div class="card2_img">
+                <img [src]="goat.url_img">
+            </div>
+            <div class="card2_text">
+                <p> {{ goat.first_name }} {{ goat.last_name }}</p>
+                <p>Née le :{{ goat.date_of_birth }}</p>
+                <p>Créateur/Fondateur/CEO de l'entreprise: {{ goat.company }}</p>
+            </div>
+        </div>
+        <a (click)="goToList()">Retour</a>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let goat of goatList">
+            <div (click)="goToGoat(goat)" class="card1">
+                <div class="card1_img">
+                    <img [src]="goat.url_img">
+                </div>
+                <div class="card1_text">
+                    <p> {{ goat.first_name}} {{ goat.last_name}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>

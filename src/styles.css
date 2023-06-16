@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #ffa600;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container{
+
+    width: clamp(300px, 90%, 1500px);
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
