@@ -8,5 +8,5 @@ import { Goat } from './goat/goat';
   templateUrl:'./app.component.html',
 })
 export class AppComponent{
-
+  title = 'GOAT';
 }

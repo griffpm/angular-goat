@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ListGoatComponent } from './list-goat.component';
+import { EditGoatsComponent } from './edit-goats.component';
 
-describe('ListGoatComponent', () => {
-  let component: ListGoatComponent;
-  let fixture: ComponentFixture<ListGoatComponent>;
+describe('EditGoatsComponent', () => {
+  let component: EditGoatsComponent;
+  let fixture: ComponentFixture<EditGoatsComponent>;
 
   beforeEach(async() => {
     await TestBed.configureTestingModule({
-      declarations: [ListGoatComponent]
-    })
-    .compileComponents();
+      declarations: [EditGoatsComponent]
+    }).compileComponents();
   });
   beforeEach(()=>{
-    fixture = TestBed.createComponent(ListGoatComponent);
+    fixture = TestBed.createComponent(EditGoatsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

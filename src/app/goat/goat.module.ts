@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ListGoatComponent } from './list-goat/list-goat.component';
 import { DetailGoatComponent } from './detail-goat/detail-goat.component';
 import { RouterModule, Routes } from '@angular/router';
+import { EditGoatsComponent } from './edit-goats/edit-goats.component';
 
 const routes: Routes = [
-  {path: 'goats', component: ListGoatComponent},
-  {path: 'goat/:id', component: DetailGoatComponent},
+  
 
 ];
 
@@ -14,6 +14,7 @@ const routes: Routes = [
   declarations: [
     ListGoatComponent,
     DetailGoatComponent,
+    EditGoatsComponent,
   ],
   imports: [
     CommonModule,

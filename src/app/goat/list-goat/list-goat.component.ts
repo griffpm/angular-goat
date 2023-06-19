@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
-import { Goat } from '../goat';
-import { GOATS } from '../data-goats';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { GoatsService } from '../goats.service';
 
 @Component({
   selector: 'app-list-goat',
@@ -9,11 +7,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./list-goat.component.css']
 })
 export class ListGoatComponent {
-  goatList: Goat[] = GOATS;
+  goats: any;
 
-  constructor(private router: Router){}
+  constructor(private goatservice: GoatsService){}
 
-  goToGoat(goat: Goat){
-    this.router.navigate(['/goat', goat.id]);
+  ngOnInit(): void {
+    this.goatservice.getGoats().subscribe(
+      (result:any)=>{
+        this.goats = result.data;
+      }
+    )
+  }
+
+  deleteGoat(goat:any){
+    this.goatservice.deleteGoat(goat.id).subscribe(data=>{
+      this.goats = this.goats.filter((u: any) => u !== goat);
+    })
   }
 }

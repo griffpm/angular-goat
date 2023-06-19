@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="text-center"><h1>Edit Goat</h1></div>
+    <div style="width:50%;margin:auto">
+      <form >  
+        <input type="hidden" name="id" formControlName="id">
+        <div class="row">
+          <div class="col-md-6">First Name</div>
+          <div class="col-md-6"><input type="text" class="form-control" name="first_name" formControlName="first_name"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Last Name</div>
+          <div class="col-md-6"><input class="form-control" type="text" name="last_name" formControlName="last_name"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Company</div>
+          <div class="col-md-6"><input class="form-control" type="text" name="company" formControlName="company"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">date_of_birth</div>
+            <div class="col-md-6"><input class="form-control" type="text" name="date_of_birth" formControlName="date_of_birth"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Url_img</div>
+            <div class="col-md-6"><input class="form-control" type="text" name="url_img" formControlName="url_img"></div>
+          </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-success"   (click)="onEdit()">EDIT STUDENT</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
